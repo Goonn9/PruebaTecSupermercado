@@ -52,7 +52,7 @@ public class ProductoService implements IProductoService{
         p.setCategoria(productoDTO.getCategoria());
         p.setCantidad(productoDTO.getCantidad());
         p.setPrecio(productoDTO.getPrecio());
-        return Mapper.toDTO(productoRepository.save(p));
+        return Mapper.toDTO(productoRepository.save(p  ));
     }
 
     @Override
